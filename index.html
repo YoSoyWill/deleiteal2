@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Deleite al cuadrado</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Eczar", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/profile.jpg');
+    min-height: 100%;
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-pale-blue w3-animate-right w3-xlarge"
+    style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-pale-blue w3-xxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-pale-red" onclick="closeNav()">Inicio</a>
+      <a href="#products" class="w3-bar-item w3-button w3-text-grey w3-hover-pale-red"
+        onclick="closeNav()">Productos</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-pale-red" onclick="closeNav()">Sobre</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-pale-red"
+        onclick="closeNav()">Contacto</a><br />
+      <a href="https://www.facebook.com/people/Deleite-al-cuadrado/100075213935597/"><img src="images/facebook.png"
+          width="35px"></a>
+      <a href="https://www.instagram.com/deleitealcuadrado"><img src="images/insta.png" width="35px"></a>
+      <a href="#"><img src="images/whatsapp.png" width="35px"></a>
+
+
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large w3-pale-red" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-pale-red" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:12px 16px" id="home">
+      <h1 class="w3-hide-medium w3-hide-large"><b>Deleite al cuadrado</b></h1>
+      <h1 class="w3-jumbo w3-hide-small"><b>Deleite al cuadrado</b></h1>
+      <h4 class="w3-wide">repostería</h4>
+      <img src="images/profile2.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="images/profile2.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="100%">
+
+    </header>
+
+    <!-- products Section -->
+    <div class="w3-padding-32 w3-content" id="products">
+      <h2 class="w3-text-grey w3-round-xxlarge w3-pale-blue w3-center">PRODUCTOS</h2>
+      <hr class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <div class="w3-display-container">
+            <img src="images/choco1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Chocobombas</h3>
+            <a href="/chocobombas.html"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+          <div class="w3-display-container">
+            <img src="images/flan1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Flanes</h3>
+            <a href="#"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+          <div class="w3-display-container">
+            <img src="images/gelatina1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Gelatinas</h3>
+            <a href="#"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+        </div>
+          <div class="w3-half">
+          <div class="w3-display-container">
+            <img src="images/queque1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Queques</h3>
+            <a href="#"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+          <div class="w3-display-container">
+            <img src="images/mousse1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Mousse</h3>
+            <a href="/chocobombas.html"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+          <div class="w3-display-container">
+            <img src="images/tResleches1.jpg" style="width:100%" class="w3-hover-opacity">
+            <h3 class="w3-display-topmiddle w3-container w3-white w3-round-large">Tres leches</h3>
+            <a href="#"
+              class="w3-display-middle w3-round-large w3-btn w3-round w3-pale-red w3-display-hover">Ver
+              más</a>
+          </div>
+        </div>
+
+
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>SOBRE</h2>
+      <hr class="w3-opacity">
+      <p>Deleite al cuadrado es la formalización de un sueño, el paso de convertir un anhelo en una realidad. Ubicados en Jericó de Desamparados, buscamos llevar sabor y dulzura a su hogar</p>
+        <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>CONTACTO</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Calle Quirós, Rosario de Desamparados</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>6010-9371</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: deleitealcuadrado@gmail.com</p>
+      </div>
+
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a href="https://www.facebook.com/people/Deleite-al-cuadrado/100075213935597/"><img src="images/facebook.png"
+          width="35px"></a>
+      <a href="https://www.instagram.com/deleitealcuadrado"><img src="images/insta.png" width="35px"></a>
+      <a href="#"><img src="images/whatsapp.png" width="35px"></a>
+
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
